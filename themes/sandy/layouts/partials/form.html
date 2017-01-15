@@ -1,0 +1,108 @@
+<form id="contact-form" class="contact-form" novalidate="novalidate">
+  <input class="input-style" name="name" required="true" type="text" placeholder="name" />
+  <input class="input-style" name="email" required="true" type="email" placeholder="mail-address" />
+  <input class="input-style" name="phone" required="true" type="text" placeholder="phone" />
+  <textarea class="textarea-style" name="message" required="true" rows="8" placeholder="content"></textarea>
+  <input class="sub-btn" type="submit" value="send" />
+  <div class="contact-form-proceeding"></div>
+  <div class="contact-form-done">
+    <h3><i class="icon fa fa-check"></i>send completely</h3>
+    Thank you for your inquiry.
+    The contents will be confirmed, you embrace and later contact you than the person in charge.
+  </div>
+  <div class="contact-form-error">
+    <h3><i class="icon fa fa-check"></i>send error</h3>
+    Is a situation that now inquiry form is not available.
+    There is a very sorry to trouble you, but, I would ask that you please contact us by phone.
+  </div>
+</form>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#contact-form').submit(function(e) {
+        e.preventDefault();
+        var $form = $(this);
+        var $button = $form.find('input[type=submit]');
+        var $completed = $form.find('.contact-form-done');
+        var $failed = $form.find('.contact-form-error');
+        var $error = $('<span>').addClass('error_m');
+        $form.find('.error_m').remove();
+        $form.find('input, textarea').each(function(i, em) {
+            var val = $(em).val();
+            if (em.type === 'submit') return;
+            if (val === '') {
+                $(em).after($error.clone().text(em.placeholder + ' is required'));
+            } else if (em.type === 'email' &&
+               !/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(val)) {
+                $(em).after($error.clone().text(em.placeholder + ' is incorrect'));
+            } else if (em.type === 'tel' && !/^[0-9-+]+$/.test(val)) {
+                $(em).after($error.clone().text(em.placeholder + ' is incorrect'));
+            }
+        });
+        if ($form.find('.error_m').length === 0) {
+            var payload = {};
+            $form.serializeArray().map(function(o) { payload[o.name] = o.value });
+            var layout = '*****************************************************************';
+            var title = 'title: ' + $('.entry-title').html().trim();
+            var url = 'url: ' + window.location.href;
+            payload.message = '\n' + layout + '\n' + title + '\n' + url + '\n' + layout + '\n' + payload.message;
+            $button.attr('disabled', true);
+            $('.contact-form-proceeding').show();
+            sendZoho(payload);
+            sendMail(payload)
+            .then(function(result) {
+                $button.hide();
+                $completed.show();
+                ga('send', 'event', 'form', 'send', 'complete');
+            }, function() {
+                $button.hide();
+                $failed.show();
+            })
+            .always(function() {
+                $button.attr('disabled', false);
+                $('.contact-form-proceeding').hide();
+                $form[0].reset();
+            });
+       }
+    });
+    var sendMail = function(payload) {
+        var d = $.Deferred();
+        $.ajax({
+            url: "//corporate.jpctrade.jp/api/api/SendMailAmazon/yushutu",
+            type: "POST",
+            data: payload,
+            timeout: 10000,
+            success: function() {
+                d.resolve();
+            },
+            error: function() {
+                d.reject();
+            }
+        });
+        return d.promise();
+    }
+    var sendZoho = function(payload) {
+        var d = $.Deferred();
+        $.ajax({
+            url: 'https://h9gkbtdtz2.execute-api.ap-northeast-1.amazonaws.com/v1/leads',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                'Last Name': payload.name,
+                'First Name': '',
+                'Email': payload.email,
+                'Phone': payload.phone,
+                'Description': payload.message,
+                'SMOWNERID': '2066587000000116031',
+                'Lead Source': ''
+            }),
+            success: function() {
+                d.resolve();
+            },
+            error: function() {
+                d.reject();
+            }
+        });
+        return d.promise();
+    }
+});
+</script>

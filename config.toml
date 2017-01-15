@@ -1,0 +1,15 @@
+languageCode = "en-us"
+title = "サンディー Lab"
+theme = "sandy"
+baseurl = "https://takusawa.github.io/"
+canonifyurls = true
+paginate = 12
+googleAnalytics = "UA-90363459-1"
+
+[params]
+  description = "Hello! This is my blog site"
+  author = "Takuya Sawada"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
