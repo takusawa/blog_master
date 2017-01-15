@@ -4,17 +4,6 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Build the project.
 hugo
-git add .
-
-# Commit changes.
-msg="update master src `date`"
-if [ $# -eq 1 ]
-  then msg="$1"
-fi
-git commit -m "$msg"
-
-# Push source and build repos.
-git push origin master
 
 cd public
 
@@ -23,6 +12,20 @@ git add .
 
 # Commit changes.
 msg="rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+git commit -m "$msg"
+
+# Push source and build repos.
+git push origin master
+
+cd ../
+
+git add .
+
+# Commit changes.
+msg="update master src `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
