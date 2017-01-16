@@ -3,6 +3,7 @@ title = "サンディー Lab"
 theme = "sandy"
 baseurl = "https://takusawa.github.io/"
 canonifyurls = true
+hasCJKLanguage = true
 paginate = 12
 googleAnalytics = "UA-90363459-1"
 

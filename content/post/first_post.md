@@ -2,7 +2,7 @@
 date = "2017-01-08T16:48:29+09:00"
 draft = false
 title = "ブログサイトを開設しました"
-
+isCJKLanguage = true
 +++
 
 初めまして！
