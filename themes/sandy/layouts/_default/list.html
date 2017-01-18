@@ -8,12 +8,16 @@
     <header class="p-page-title">
       <h1 class="title">{{ .Title }}</h1>
     </header>
+    {{ else }}
+    <header class="p-page-title">
+      <h1 class="title">Topページ</h1>
+    </header>
     {{ end }}
 
     <div class="row">
       {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
       {{ range $paginator.Pages }}
-      <div class="col-sm-4 col-xs-12">{{ .Render "li" }}</div>
+      <div class="col-sm-6 col-xs-12">{{ .Render "li" }}</div>
       {{ end }}
     </div>
 
