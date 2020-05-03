@@ -10,7 +10,7 @@ title = ""
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/embed-js/4.2.1/embed.min.js"></script>
 
-# 高見千歌
+# 高見千歌 
 <script>
 // canvasを作ってHTMLに突っ込む。
 const canvas = document.createElement('canvas');
