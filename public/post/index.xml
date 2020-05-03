@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on sawada_ta</title>
+    <link>https://takusawa.github.io/post/</link>
+    <description>Recent content in Posts on sawada_ta</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 08 Jan 2017 16:42:10 +0900</lastBuildDate>
+    
+	<atom:link href="https://takusawa.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://takusawa.github.io/post/canvas_chika_/</link>
+      <pubDate>Sun, 08 Jan 2017 16:42:10 +0900</pubDate>
+      
+      <guid>https://takusawa.github.io/post/canvas_chika_/</guid>
+      <description>高見千歌 // canvasを作ってHTMLに突っ込む。 const canvas = document.createElement(&#39;canvas&#39;); const context1 = canvas.getContext(&#39;2d&#39;); canvas.width = 500; canvas.height = 500; document.body.appendChild(canvas); /* 高見千歌 ここから */ context1.fillStyle = &#39;#fd7e14&#39;; context1.strokeStyle = &#39;#fd7e14&#39;; context1.beginPath(); context1.arc(250, 250, 150, 0, (Math.PI*2), false); context1.stroke(); context1.fill(); context1.fillStyle = &#39;#fff&#39;; context1.strokeStyle =</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://takusawa.github.io/post/canvas_dia_/</link>
+      <pubDate>Sun, 08 Jan 2017 16:42:10 +0900</pubDate>
+      
+      <guid>https://takusawa.github.io/post/canvas_dia_/</guid>
+      <description>黒澤ダイヤ // canvasを作ってHTMLに突っ込む。 const canvas = document.createElement(&#39;canvas&#39;); const context1 = canvas.getContext(&#39;2d&#39;); canvas.width = 500; canvas.height = 500; document.body.appendChild(canvas); /* 黒澤ダイヤ ここから */ context1.fillStyle = &#39;#dc3545&#39;; context1.strokeStyle = &#39;#dc3545&#39;; context1.beginPath(); context1.arc(250, 250, 150, 0, (Math.PI*2), false); context1.stroke(); context1.fill(); /*********************/ context1.fillStyle =</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://takusawa.github.io/post/canvas_hanamaru_/</link>
+      <pubDate>Sun, 08 Jan 2017 16:42:10 +0900</pubDate>
+      
+      <guid>https://takusawa.github.io/post/canvas_hanamaru_/</guid>
+      <description>国木田花丸 // canvasを作ってHTMLに突っ込む。 const canvas = document.createElement(&#39;canvas&#39;); const context1 = canvas.getContext(&#39;2d&#39;); canvas.width = 500; canvas.height = 500; document.body.appendChild(canvas); /* 国木田花丸 ここから */ context1.fillStyle = &#39;#edee80&#39;; context1.strokeStyle = &#39;#edee80&#39;; context1.beginPath(); context1.arc(250, 250, 150, 0, (Math.PI*2), false); context1.stroke(); context1.fill(); /*********************/ context1.fillStyle =</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://takusawa.github.io/post/canvas_kanan_/</link>
+      <pubDate>Sun, 08 Jan 2017 16:42:10 +0900</pubDate>
+      
+      <guid>https://takusawa.github.io/post/canvas_kanan_/</guid>
+      <description>松浦果南 // canvasを作ってHTMLに突っ込む。 const canvas = document.createElement(&#39;canvas&#39;); const context1 = canvas.getContext(&#39;2d&#39;); canvas.width = 500; canvas.height = 500; document.body.appendChild(canvas); /* 松浦果南 ここから */ context1.fillStyle = &#39;#36d6a7&#39;; context1.strokeStyle = &#39;#36d6a7&#39;; context1.beginPath(); context1.arc(250, 250, 150, 0, (Math.PI*2), false); context1.stroke(); context1.fill(); /****</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://takusawa.github.io/post/canvas_mari_/</link>
+      <pubDate>Sun, 08 Jan 2017 16:42:10 +0900</pubDate>
+      
+      <guid>https://takusawa.github.io/post/canvas_mari_/</guid>
+      <description>小原鞠莉 // canvasを作ってHTMLに突っ込む。 const canvas = document.createElement(&#39;canvas&#39;); const context1 = canvas.getContext(&#39;2d&#39;); canvas.width = 500; canvas.height = 500; document.body.appendChild(canvas); /* 小原鞠莉 ここから */ context1.fillStyle = &#39;#b58dff&#39;; context1.strokeStyle = &#39;#b58dff&#39;; context1.beginPath(); context1.arc(250, 250, 150, 0, (Math.PI*2), false); context1.stroke(); context1.fill(); /**手裏</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://takusawa.github.io/post/canvas_riko_/</link>
+      <pubDate>Sun, 08 Jan 2017 16:42:10 +0900</pubDate>
+      
+      <guid>https://takusawa.github.io/post/canvas_riko_/</guid>
+      <description>桜内梨子 // canvasを作ってHTMLに突っ込む。 const canvas = document.createElement(&#39;canvas&#39;); const context1 = canvas.getContext(&#39;2d&#39;); canvas.width = 500; canvas.height = 500; document.body.appendChild(canvas); /* 桜内梨子 ここから */ context1.fillStyle = &#39;#f76876&#39;; context1.strokeStyle = &#39;#f76876&#39;; context1.beginPath(); context1.arc(250, 250, 150, 0, (Math.PI*2), false); context1.stroke(); context1.fill(); /****</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://takusawa.github.io/post/canvas_ruby_/</link>
+      <pubDate>Sun, 08 Jan 2017 16:42:10 +0900</pubDate>
+      
+      <guid>https://takusawa.github.io/post/canvas_ruby_/</guid>
+      <description>黒澤ルビィ // canvasを作ってHTMLに突っ込む。 const canvas = document.createElement(&#39;canvas&#39;); const context1 = canvas.getContext(&#39;2d&#39;); canvas.width = 500; canvas.height = 500; document.body.appendChild(canvas); /* 黒澤ルビィ ここから */ context1.fillStyle = &#39;#f94a9a&#39;; context1.strokeStyle = &#39;#f94a9a&#39;; context1.beginPath(); context1.arc(250, 250, 150, 0, (Math.PI*2), false); context1.stroke(); context1.fill(); /* 飴 白</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://takusawa.github.io/post/canvas_yoshiko_/</link>
+      <pubDate>Sun, 08 Jan 2017 16:42:10 +0900</pubDate>
+      
+      <guid>https://takusawa.github.io/post/canvas_yoshiko_/</guid>
+      <description>津島善子 // canvasを作ってHTMLに突っ込む。 const canvas = document.createElement(&#39;canvas&#39;); const context1 = canvas.getContext(&#39;2d&#39;); canvas.width = 500; canvas.height = 500; document.body.appendChild(canvas); /* 津島善子 ここから */ context1.fillStyle = &#39;#adadad&#39;; context1.strokeStyle = &#39;#adadad&#39;; context1.beginPath(); context1.arc(250, 250, 150, 0, (Math.PI*2), false); context1.stroke(); context1.fill(); /* 顔 白枠 左</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://takusawa.github.io/post/canvas_you_/</link>
+      <pubDate>Sun, 08 Jan 2017 16:42:10 +0900</pubDate>
+      
+      <guid>https://takusawa.github.io/post/canvas_you_/</guid>
+      <description>渡辺曜 // canvasを作ってHTMLに突っ込む。 const canvas = document.createElement(&#39;canvas&#39;); const context1 = canvas.getContext(&#39;2d&#39;); canvas.width = 500; canvas.height = 500; document.body.appendChild(canvas); /* 渡辺曜 ここから */ context1.fillStyle = &#39;#00dcff&#39;; context1.strokeStyle = &#39;#00dcff&#39;; context1.beginPath(); context1.arc(250, 250, 150, 0, (Math.PI*2), false); context1.stroke(); context1.fill(); /****白枠</description>
+    </item>
+    
+  </channel>
+</rss>
